@@ -7,4 +7,4 @@ before_install:
   - docker build -t iliapsynkov/docker-react-udemy -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true iliapsynkov/docker-react-udemy npm run test
